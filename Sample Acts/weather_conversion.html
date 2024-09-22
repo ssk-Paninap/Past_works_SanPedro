@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        #cont {
+            max-width: 500px;
+            max-height: 500px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            margin: auto;
+        }
+        #myh1 {
+            color: rgb(0, 157, 255);
+        }
+        #cont2{
+            background-color: rgb(249, 255, 203);
+            padding: 10px;
+            width: 100%;
+            align-items: center;
+            border: rgb(243, 255, 153);
+            border-radius: 15px;
+        }
+        #cont3 {    
+            background-color: rgb(135, 255, 223);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border: rgb(135, 199, 255);
+            border-radius: 15px;
+        }   
+
+        .rads {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px; 
+            background-color: white;
+        }
+        .lab {
+            display: inline-block;
+            margin: 0;
+            margin-bottom: 10px; 
+            font-size: 30px;
+        }
+        #tb1 {
+            border: white;
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            margin-bottom: 15px;
+
+        }
+        #btn {
+            width: 100px;
+            height: 35px;
+            background-color: rgb(255, 75, 75);
+            border: rgb(255, 75, 75);
+            border-radius: 10px;
+            color: white;
+        }
+        #btn:hover {
+            width: 100px;
+            height: 35px;
+            background-color: rgb(198, 255, 127);
+            border: rgb(198, 255, 127);
+            border-radius: 10px;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div id="cont2">
+            <h1 id="myh1">Temperature Converter</h1>
+
+            <div id="cont3">
+                <label for="tb1" class="lab">Type here:</label>
+                <input type="text"  id="tb1"><br>
+                
+
+
+                <input type="radio" id="tb2" name="choice" class="rads">
+                <label class="lab" for="tb2">Celsius to Farenheight:</label><br>
+
+                <input class="rads" type="radio" id="tb3" name="choice">
+                <label class="lab" for="tb3">Farenheight to Celsius:</label><br>
+
+                <button id="btn">convert</button>
+
+                <h3 id="myh3"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather_conversion.js"></script>
+</body>
+</html>

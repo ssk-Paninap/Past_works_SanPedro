@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter program</title>
+
+    <style>
+        #container {
+            text-align: center;
+            padding:10px;
+            background-color: aliceblue;
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            border: 5px solid black;
+            border-radius: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #btn1 {
+            background-color: rgb(255, 112, 112);
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: rgb(255, 112, 112);
+            border-radius: 5px ;
+        }
+        #btn2 {
+            background-color: rgba(139, 255, 154, 0.922);
+            color: white;
+            width: 75px;
+            height: 30px;
+            border: rgb(255, 112, 112);
+            border-radius: 5px ;
+        }
+        #btn3 {
+            background-color: rgb(68, 165, 255);
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: rgb(255, 112, 112);
+            border-radius: 5px ;
+        }
+        #myh3 {
+            margin-left: 45%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3 id="myh3">Counter Program</h3>
+    <div id="container">
+        
+        <div id="cont2">
+            
+            <button id="btn1">Increase</button>
+
+            
+            <button id="btn2">Reset</button>
+            
+            
+            <button id="btn3">Decrease</button>
+
+            <h1 id="myh1">Start</h1> 
+        </div>
+    </div>
+
+    <script>
+        let counting = 0;
+        document.getElementById('btn1').onclick = function (){
+        
+            counting++;
+            document.getElementById('myh1').textContent = counting;
+        }
+        document.getElementById('btn2').onclick = function (){
+            counting = 0;
+            document.getElementById('myh1').textContent = counting;
+        }
+        document.getElementById('btn3').onclick = function (){
+            counting--;
+            document.getElementById('myh1').textContent = counting;
+        }
+    </script>
+</body>
+</html>
